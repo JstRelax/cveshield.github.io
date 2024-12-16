@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2d2d2d;
+    color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+#dashboard {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #00d8ff;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+label, select {
+    color: #f1f1f1;
+}
+
+#cve-carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-control {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #f1f1f1;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#cve-cards-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 10px 0;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.cve-card {
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cve-card h2 {
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #00d8ff;
+}
+
+.cve-info {
+    margin: 10px 0;
+}
+
+.cve-info div {
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    background-color: #555;
+    border-radius: 5px;
+    height: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.tweet {
+    background-color: #444;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.social-media div {
+    margin-bottom: 5px;
+    font-size: 14px;
+}

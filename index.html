@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVEShield Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="dashboard">
+        <header>
+            <h1>CVEShield</h1>
+            <nav>
+                <div>
+                    <label for="ranking">Ranking:</label>
+                    <select id="ranking">
+                        <option value="trending">Trending</option>
+                        <option value="new">New</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="time-period">Time Period:</label>
+                    <select id="time-period">
+                        <option value="1-day">1 day</option>
+                        <option value="1-week">1 week</option>
+                    </select>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Carousel Container -->
+        <div id="cve-carousel-container">
+            <button class="carousel-control left" onclick="scrollCarousel('left')">◀</button>
+            <div id="cve-cards-container">
+                <!-- Dynamisch gegenereerde CVE-kaarten -->
+            </div>
+            <button class="carousel-control right" onclick="scrollCarousel('right')">▶</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
